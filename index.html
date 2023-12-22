@@ -214,7 +214,19 @@
                   <div>
                     <h3>Software Engineer I</h3>
                     <h4>Nissan Digital India LLP</h4>
-                    <p>Nov 2022 - Currently working here</p>
+                    <p id="currentExperience"></p>
+                    <script>
+                      // Calculate the years and months of experience
+                      var startDate = new Date('Nov 2022');
+                      var currentDate = new Date();
+                      
+                      var totalMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 + (currentDate.getMonth() - startDate.getMonth());
+                      var experienceYears = Math.floor(totalMonths / 12);
+                      var experienceMonths = totalMonths % 12;
+
+                      // Update the HTML element with the calculated years and months of experience
+                      document.getElementById('currentExperience').innerHTML = "Nov 2022 - " + experienceYears + "yrs " + experienceMonths + "mos of experience (Currently working here)";
+                    </script>
                   </div>
                 </li>
               </ul>
