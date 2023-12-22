@@ -43,6 +43,16 @@ h6 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   color: #000000;
+  transition: all 0.4s ease 0s;
+}
+
+a > h1:hover,
+a > h2:hover,
+a > h3:hover,
+a > h4:hover,
+a > h5:hover,
+a > h6:hover {
+  color: #854fee !important;
 }
 
 .list {
