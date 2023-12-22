@@ -3734,7 +3734,8 @@ h6 {
     width: 25px;
     height: 3px;
     /* background: #fff; */
-    background: #000;
+    /* background: #000; */
+    background: #854fee;
     margin: auto;
     margin-bottom: 4px;
     transition: all 400ms linear;
@@ -3764,7 +3765,7 @@ h6 {
     line-height: 40px;
     margin-right: 0px;
     display: block;
-    border-bottom: 1px solid #85858533 !important;
+    border-bottom: 1px solid #d986ff70 !important;
     border-radius: 0px;
     color: #fff;
   }
