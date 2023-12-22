@@ -601,6 +601,12 @@
                 <button type="submit" value="submit" class="primary_btn">
                   <span>Send Message</span>
                 </button>
+
+                <a
+                href="mailto:wagh.bhushan.998@gmail.com"
+                    target="_blank"
+                    class="primary_btn tr-bg" ><span>Send Email</span></a
+                  >
               </div>
             </form>
           </div>
@@ -621,8 +627,9 @@
                         Subject: ${document.getElementById("subject").value}\n
                         Mail: ${document.getElementById("message").value}`,
             }).then(
-              message => alert(`Your message has been received to me...
-  I will contact you soon, Thank You...`)
+  //             message => alert(`Your message has been received to me...
+  // I will contact you soon, Thank You...`)
+                message => alert(`Temporary message service is unavailable. Please try sending the email instead of a message. We apologize for any inconvenience.`)
             );
           }
           //xngwzmvupmaunzne
