@@ -301,7 +301,7 @@ button:focus {
 .header_area .navbar .nav .nav-item .nav-link {
   font: 500 14px/100px "Rubik", sans-serif;
   text-transform: uppercase;
-  color: #000000;
+  color: #000000 !important;
   padding: 0px;
   display: inline-block;
 }
@@ -3705,7 +3705,8 @@ h6 {
   }
 
   .header_area .navbar {
-    background: #000;
+    /* background: #000; */
+    background: #fff;
   }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
@@ -3732,7 +3733,8 @@ h6 {
     display: block;
     width: 25px;
     height: 3px;
-    background: #fff;
+    /* background: #fff; */
+    background: #000;
     margin: auto;
     margin-bottom: 4px;
     transition: all 400ms linear;
@@ -3762,7 +3764,7 @@ h6 {
     line-height: 40px;
     margin-right: 0px;
     display: block;
-    border-bottom: 1px solid #ededed33;
+    border-bottom: 1px solid #85858533 !important;
     border-radius: 0px;
     color: #fff;
   }
