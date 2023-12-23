@@ -4359,3 +4359,19 @@ h1 > span {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+.company-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: auto;
+  word-wrap: break-word;
+}
+.company-name > h4 {
+  word-wrap: break-word;
+  margin: 0px !important;
+}
+
+.company-logo {
+  height: 25px;
+}
