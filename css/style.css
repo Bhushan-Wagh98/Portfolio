@@ -4375,3 +4375,10 @@ h1 > span {
 .company-logo {
   height: 25px;
 }
+
+.fixed-arrow {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10000000;
+}
