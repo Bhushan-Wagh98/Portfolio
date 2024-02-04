@@ -233,8 +233,42 @@
                       var experienceMonths = totalMonths % 12;
 
                       // Update the HTML element with the calculated years and months of experience
-                      document.getElementById('currentExperience').innerHTML = "Nov 2022 - " + experienceYears + "yrs & " + experienceMonths + "mos of experience (Currently working here)";
+                      document.getElementById('currentExperience').innerHTML = `Nov 2022 - ${experienceYears} yrs & ${experienceMonths} mos of experience (Currently working here)`;
                     </script>
+                    <div>
+                        <h5>Responsibilities</h5>
+
+                        <ul class="visible-list">
+                          <li><strong>Requirements:</strong> Gather and analyze system and user requirements.</li>
+                          <li><strong>Development:</strong> Build Java modules, develop Angular, Java EE and Spring Boot applications.</li>
+                          <li><strong>Testing:</strong> Ensure rigorous testing of features before release. 
+                            <button class="more-button" onclick="toggleResponsibilities()"><h6>Show More</h6></button></li>
+                        </ul>
+
+                        <ul class="hidden-list hidden">
+                          <li><strong>Agile Methodologies:</strong> Implement software development using agile methodologies.</li>
+                          <li><strong>Deployment:</strong> Deploy and maintain secure, high-quality applications.</li>
+                          <li><strong>Task Management:</strong> Prioritize, assign, and execute tasks throughout the development lifecycle.</li>
+                          <li><strong>Code Quality:</strong> Write efficient code, review, test, and debug team members' code.</li>
+                          <li><strong>Documentation:</strong> Ensure comprehensive technical documentation.</li>
+                          <li><strong>Production Support:</strong> Provide support for adhoc requests on Production.</li>
+                          <li><strong>Feature Definition:</strong> Collaborate with product management to define new features, providing required specifications. 
+                            <button class="less-button" onclick="toggleResponsibilities()"><h6>Show Less</h6></button></li>
+                        </ul>
+                    
+
+                        <script>
+                          function toggleResponsibilities() {
+                            const moreList = document.querySelector('.hidden-list');
+                            const moreButton = document.querySelector('.more-button');
+                            const lessButton = document.querySelector('.less-button');
+
+                            moreList.classList.toggle('hidden');
+                            moreButton.style.display = moreList.classList.contains('hidden') ? 'inline' : 'none';
+                            lessButton.style.display = moreList.classList.contains('hidden') ? 'none' : 'inline';
+                          }
+                        </script>
+                    </div>
                   </div>
                 </li>
               </ul>
